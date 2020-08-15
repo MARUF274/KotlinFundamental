@@ -6,15 +6,27 @@ fun main(args: Array<String>){
 
     // nextInt() reads the next integer from the keyboard
     var nilai:Int = reader.nextInt()
-    if (nilai >= 75 && nilai < 100){
-        print ("Nilai kamu $nilai, selamat ya!")
-
+    var out =
+    if (nilai >= 90 && nilai < 100){
+        "A"
     }
-    else if(nilai > 100 || nilai < 0)
+    else if(nilai >= 80 && nilai < 100)
     {
-        print("invalid Number")
+        "B"
     }
-    else{
-        print("Nilai kamu $nilai, silakan ikut remidial!")
+    else if(nilai >= 70 && nilai < 100)
+    {
+        "C"
     }
+    else if(nilai >= 60 && nilai < 100)
+    {
+        "D"
+    }
+    else if( nilai > 100 || nilai < 0)
+    {
+        "Invalid"
+    } else {
+        "E"
+    }
+    print(out)
 }
